@@ -48,6 +48,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = textArray[indexPath.row]
         cell.imageView?.image = UIImage(named: "checkImage")
+//        Cellのハイライトを消す
+        cell.selectionStyle = .none
         return cell
     }
     
