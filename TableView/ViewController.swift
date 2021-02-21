@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         textField.delegate = self
+//        TableViewの区切り線を消す
+        tableView.separatorStyle = .none
         
         // Do any additional setup after loading the view.
     }
@@ -50,6 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView?.image = UIImage(named: "checkImage")
 //        Cellのハイライトを消す
         cell.selectionStyle = .none
+
         return cell
     }
     
